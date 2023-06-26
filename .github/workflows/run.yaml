@@ -1,6 +1,12 @@
 name: learn-github-actions
 # on: [push]
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      test_version_alias:
+        type: string
+        required: false
+        description: Docker image version of the test environment.
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest

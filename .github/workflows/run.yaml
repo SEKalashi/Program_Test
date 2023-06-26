@@ -1,4 +1,5 @@
 name: learn-github-actions
+run-name: l-Git-A [${{ github.ref }}]
 # on: [push]
 on:
   workflow_dispatch:
